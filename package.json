@@ -1,0 +1,19 @@
+{
+  "name": "stormcomp-economy",
+  "version": "1.0.0",
+  "description": "De StormComp Economy Bot ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon"
+  },
+  "author": "DolfjeGamerNL",
+  "license": "ISC",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "moment": "^2.24.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
