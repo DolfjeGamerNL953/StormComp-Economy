@@ -1,11 +1,11 @@
-const Discord = require('discord.js')
+const discord = require("discord.js")
 const botconfig = require("./botconfig.json");
 const fs = require('fs');
 const moment = require('moment'); // The moment package, lets you view the current date and time in a nice format.
 const active = new Map();
 
-const bot = new Discord.Client();
-bot.commands = new Discord.Collection();
+const bot = new discord.Client();
+bot.commands = new discord.Collection();
 
 fs.readdir("./Gebruiker/", (err, files) => {
  
@@ -57,7 +57,7 @@ bot.on('message', message => {
  if (msg === prefix + 'REKENING') {
    // Money [Acces your balance] this is triggered by money or balance
 
-    var balanceEmbed = new Discord.RichEmbed()
+    var balanceEmbed = new discord.RichEmbed()
       .setTitle("Bank")
       .setColor('0xF1C40F')
       .setThumbnail("https://cdn.discordapp.com/emojis/669552722781143040.png?v=1")
@@ -115,7 +115,7 @@ bot.on('message', message => {
 
     } // Remember to always close IF statements. Also, remember this for loop is only grabbing one object and running it through the loop.
 
-    var guildEmbed = new Discord.RichEmbed()
+    var guildEmbed = new discord.RichEmbed()
       .setTitle("Guild Stats")
       .setColor('0XF1C40F')
       .setThumbnail("https://cdn.discordapp.com/emojis/669552722781143040.png?v=1")
@@ -150,7 +150,7 @@ bot.on('message', message => {
 
     } // Remember to always close IF statements. Also, remember this for loop is only grabbing one object and running it through the loop.
 
-    var embedGlobal = new Discord.RichEmbed()
+    var embedGlobal = new discord.RichEmbed()
       .setTitle("Global Stats")
       .setColor('0XF1C40F')
       .setThumbnail("https://cdn.discordapp.com/emojis/669552722781143040.png?v=1")
